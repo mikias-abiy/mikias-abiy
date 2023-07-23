@@ -10,6 +10,11 @@ I am a passionate highly motivated junior software engineer from Ethiopia. I am 
 <br>
 <br>
 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=miiki00&theme=tokyonight)
+
+<br>
+<br>
+
 [![Mikias's GitHub stats](https://github-readme-stats.vercel.app/api?username=mikias-abiy)](https://github.com/anuraghazra/github-readme-stats)
 
 <br>
