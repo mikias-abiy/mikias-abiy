@@ -10,7 +10,7 @@ I am a passionate highly motivated junior software engineer from Ethiopia. I am 
 <br>
 <br>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=miiki00&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mikias-abiy&theme=tokyonight)
 
 <br>
 <br>
@@ -21,6 +21,6 @@ I am a passionate highly motivated junior software engineer from Ethiopia. I am 
 
 ### Projects
 Here are some mile stone projects i have done.
-* [**Monty**](https://github.clm/mikias-abiy/monty#readme): A simple interpreted stack oriented scripting language built with C.
+* [**Monty**](https://github.com/mikias-abiy/monty#readme): A simple interpreted stack oriented scripting language built with C.
 * [**Responsive Web Designs**](https://github.com/mikias-abiy/responsive_web_designs#readme): Collection of responsive web design milestone projects from my freeCodeCamp Responsive Web Design curriculum.
 * [**Simple Shell**](https://github.com/mikias-abiy/simple_shell#readme): This is a simple UNIX shell built with C that performs some tasks that a standard UNIX shell can perform.
