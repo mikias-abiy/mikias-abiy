@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <button class="toggle-on" id="toggleSidebarOn">
+      <i class="bi bi-arrow-right"></i>
+    </button>
+    <div class="sidebar">
+      <div class="profile">
+        <div class="sidebar-name">
+          <span class="first-name"></span><br>
+          <span class="last-name"></span>
+        </div>
+        <img class="profile-image" src="./assets/" alt="">
+      </div>
+      <div class="about-me">
+        <a href="index.html#aboutMe">
+          <h3>About Me</h3>
+          <p>
+            I am a self-taught passionate junior software engineer from Ethiopia...
+          </p>
+      </a>
+      </div>
+      <div class="toggle-off-container">
+        <button class="toggle-off" id="toggleSidebarOff">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#works">Description</a></li>
+          <li><a href="index.html#skills">Gallary</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-social-links">
+        <span>
+          <a href="https://github.com/mikias-abiy001" target="_blank">
+            <i class="devicon-github-plain"></i>
+          </a>
+        </span>
+        <span>
+          <a href="" target="_blank">
+            <i class="devicon-linkedin-plain"></i>
+          </a>
+        </span>
+        <span>
+          <a href="" target="_blank">
+            <i class="devicon-twitter-plain"></i>
+          </a>          
+        </span>
+      </div>
+    </div>
+    <div class="main">
+      <section>
+        <div>
+          <h1>Description</h1>
+          <div>
+            <p>
+              <h2>What is Monty ?</h1>
+              <br>
+              <p>
+                Monty is a simple interpreted <a href="https://en.wikipedia.org/wiki/Stack-oriented_programming">Stack-oriented scripting language</a>
+                with no capability of coditional decision making. It was a school project from our school ALX Holberton.<br>
+               Here is an example input output of the monty interpreter.
+              </p>
+              <pre class="code">
+                <code>
+$ cat file      
+push <span class="hljs-number">121</span> # pushs an element to the top of the stack.
+push <span class="hljs-number">100</span>
+push <span class="hljs-number">111</span>
+push <span class="hljs-number">98</span>
+push <span class="hljs-number">121</span>
+push <span class="hljs-number">114</span>
+push <span class="hljs-number">101</span>
+push <span class="hljs-number">118</span>
+push <span class="hljs-number">69</span>
+push <span class="hljs-number">32</span>
+push <span class="hljs-number">105</span>
+push <span class="hljs-number">72</span>
+pstr # prints all the values from top to bottom with respective ascii value.
+pall # print all the stack elements
+add  # add the top two elements of the stack
+mul  # multiplies the to two elements of the stack.
+rotl # puts the top element of the stack at the end of the stack.
+pall
+rotr # puts the bottom element of the stack at the top of the stack
+pall
+
+$ monty file          
+Hi Everybody
+<span class="hljs-number">72</span> - Top of the stack 
+<span class="hljs-number">105</span>
+<span class="hljs-number">32</span>
+<span class="hljs-number">69</span>
+<span class="hljs-number">118</span>
+<span class="hljs-number">101</span>
+<span class="hljs-number">114</span>
+<span class="hljs-number">121</span>
+<span class="hljs-number">98</span>
+<span class="hljs-number">111</span>
+<span class="hljs-number">100</span>
+<span class="hljs-number">121</span>
+<span class="hljs-number">69</span> - Top of the stack after the add, push, and rotl operator.
+<span class="hljs-number">118</span>
+<span class="hljs-number">101</span>
+<span class="hljs-number">114</span>
+<span class="hljs-number">121</span>
+<span class="hljs-number">98</span>
+<span class="hljs-number">111</span>
+<span class="hljs-number">100</span>
+<span class="hljs-number">121</span>
+<span class="hljs-number">5664</span> - End of stack
+<span class="hljs-number">5664</span> - Top of the stack after the rotr operation.
+<span class="hljs-number">69</span>
+<span class="hljs-number">118</span>
+<span class="hljs-number">101</span>
+<span class="hljs-number">114</span>
+<span class="hljs-number">121</span>
+<span class="hljs-number">98</span>
+<span class="hljs-number">111</span>
+<span class="hljs-number">100</span>
+<span class="hljs-number">121</span>
+                </code>
+              </pre>
+              <h2 id="installation-guide">Installation Guide</h2>
+              <p>First clone the repo to your local machin by executing the folowing command in your terminal, assuming that you have git installed on your machine.</p>
+              <pre class="code">
+                <code>
+git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/miiki00/monty.git
+                </code>
+              </pre>
+              <p>
+                After you have the source locally it is easy to build monty. You just have to have a C compiler on your machine. In this example I am using
+                <a href="https://gcc.gnu.org/">gcc</a>.
+              </p>
+              <pre class="code">
+                <code>
+<span class="hljs-attribute">cd</span> monty/
+gcc -std=gnu89 <span class="hljs-regexp">*.c</span> -o monty
+                </code>
+              </pre>
+              <p>
+                Then if you want to play with often you can add it to one of your $PATH environment so you don&#39;t
+                have to go to the installed directory every time you want to execute monty<br>
+              </p>
+              <blockquote>
+                <p>
+                  Tip: on most UNIX-like system <code>/usr/bin</code> is where most of your executables are stored on windows it may have
+                  a different step so feel free to scrap the internet a little When I mean monty I am talking about the executable and not the direcotry.
+                </p>
+                <pre class="code">
+                  <code>
+mv monty <span class="hljs-regexp">/path/</span>to<span class="hljs-regexp">/one/</span>of<span class="hljs-regexp">/your/</span>path<span class="hljs-regexp">/environment/</span>
+                  </code>
+                </pre>
+              </blockquote>
+              <p>You can also use it with out adding it to your path. here is how and also assuming you are in the directory where the executable is located.</p>
+              <pre class="code">
+                <code>
+./monty <span class="hljs-built_in">file</span>
+                </code>
+              </pre>
+              <h2>Monty&#39;s operators/commands and Usage.</h2>
+              <blockquote>
+                <p>NOTE: monty can only interpret one command perline any thing you put after a valid command will not be taken to account</p>
+              </blockquote>
+              <h3>Manipulating the stack.</h3>
+              <p>
+                When monty startes interpreting a source file it startes with an empty stack so you have only two option to what you first line of your source file can be
+                the first pushing and element to the stack or changing the mode in which the stack operates on.<br>
+                The stack operated in to modes stack and queue. Stack(LIFO) mode is where both addition and deletion that happen on the stack takes place from one end (ie TOP, BOTTOM).<br>
+                The default is stack. Queue(FIFO) mode is where deletion happens at one end and addition happens from the other. you can go back and forth it&#39;s no problem for monty. In the case of monty when it&#39;s operating in Stack mode both addition and delition happen at the top of the stack. and in the case of Queue mod deletion takes place at the top of the stack and addition happens at the end of the stack.<br>
+              </p>
+              <p>Here is some example input output of monty while operating in stack mode and queue mode.</p>
+              <pre class="code">
+                <code>
+$ cat file.m
+stack <span class="hljs-comment"># getting it to operate in stack mode (but it's not necessary in the case of stack as it's the default).</span>
+<span class="hljs-keyword">push</span> <span class="hljs-number">3</span> <span class="hljs-comment"># you will see that thing will appear in revers order pushing while you are in stack mode.</span>
+<span class="hljs-keyword">push</span> <span class="hljs-number">2</span>
+<span class="hljs-keyword">push</span> <span class="hljs-number">1</span>
+pall <span class="hljs-comment"># prints all the elements</span>
+<span class="hljs-keyword">pop</span> <span class="hljs-comment"># deleting elements.</span>
+<span class="hljs-keyword">pop</span>
+<span class="hljs-keyword">pop</span>
+pstr <span class="hljs-comment"># printing new lines </span>
+pstr
+queue <span class="hljs-comment"># getting it to operate in queue mode.</span>
+<span class="hljs-keyword">push</span> <span class="hljs-number">1</span> <span class="hljs-comment"># in the case of queue things will appear in the same order they were pushed.</span>
+<span class="hljs-keyword">push</span> <span class="hljs-number">2</span>
+<span class="hljs-keyword">push</span> <span class="hljs-number">3</span>
+pall
+
+$ monty file.m
+<span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+
+<span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+                </code>
+              </pre>
+              <p>Here is a complete list of monty commands/operators.</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align:left">Command</th>
+                    <th style="text-align:left">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:left">push</td>
+                    <td style="text-align:left">Adds an integer into the stacks top/bottom base on the mode you are in.<br>syntax: <code>push &lt;integer&gt;</code>.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">pall</td>
+                    <td style="text-align:left">Prints all the integers in the stack.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">pop</td>
+                    <td style="text-align:left">Delets the top element of the stack.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">pint</td>
+                    <td style="text-align:left">Prints the top element of the stack.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">swap</td>
+                    <td style="text-align:left">Swaps the index of top and the second top element.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">add</td>
+                    <td style="text-align:left">Adds the top two elements and stors the sum at the second element and deletes the top element.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">nop</td>
+                    <td style="text-align:left">Does nothing.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">sub</td>
+                    <td style="text-align:left">Just like add but instead of adding it is for substracting the top element from the second element.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">mul</td>
+                    <td style="text-align:left">Just like add but instead of adding it is for multiplying the top two elements by each other.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">div</td>
+                    <td style="text-align:left">Just like add but instead of adding it is for dividing the second element by the top one.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">mod</td>
+                    <td style="text-align:left">Just like add but instead of adding it is for find the mod of the second element divided by the top.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">pchar</td>
+                    <td style="text-align:left">Prints the top element&#39;s corresponding assci value it it have one else error will be printed.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">pstr</td>
+                    <td style="text-align:left">Prints the stack element&#39;s correspoonding assci value and it won&#39;t stop until NUll terminator is found, stack ends or value is out of range</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">rotl</td>
+                    <td style="text-align:left">Takes the top element of the stack an puts it at the end.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">rotr</td>
+                    <td style="text-align:left">Takes the last element and puts it at the top.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">stack</td>
+                    <td style="text-align:left">The stack follow LIFO properties. (both addition and deletion takes place on one end)</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">queue</td>
+                    <td style="text-align:left">The stack follows FIFO properties. (addition takes place at the rear of the stack and deletion takes place at the front of the stack.)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

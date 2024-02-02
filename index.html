@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <button class="toggle-on" id="toggleSidebarOn">
+      <i class="bi bi-arrow-right"></i>
+    </button>
+    <div class="sidebar">
+      <div class="profile">
+        <div class="sidebar-name">
+          <span class="first-name"></span><br>
+          <span class="last-name"></span>
+        </div>
+        <img class="profile-image" src="./assets/" alt="">
+      </div>
+      <div class="about-me">
+        <a href="index.html#aboutMe">
+          <h3>About Me</h3>
+          <p>
+            I am a self-taught passionate junior software engineer from Ethiopia...
+          </p>
+      </a>
+      </div>
+      <div class="toggle-off-container">
+        <button class="toggle-off" id="toggleSidebarOff">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html#aboutMe">About Me</a></li>
+          <li><a href="index.html#works">Works</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-social-links">
+        <span>
+          <a href="https://github.com/mikias-abiy001" target="_blank">
+            <i class="devicon-github-plain"></i>
+          </a>
+        </span>
+        <span>
+          <a href="" target="_blank">
+            <i class="devicon-linkedin-plain"></i>
+          </a>
+        </span>
+        <span>
+          <a href="" target="_blank">
+            <i class="devicon-twitter-plain"></i>
+          </a>          
+        </span>
+      </div>
+    </div>
+    <div class="main">
+      <section id="aboutMe">
+        <div>
+          <h1>About me</h1>
+          <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <div style="display: inline-block; width: 40%; height: 60%; margin: 10% 3%; padding: 2%; border: 2px solid white; border-top: none; min-width: 300px;">
+              <p style="line-height: 1.5rem;">
+                Mikias Abiy: <span style="color: #1C1C1C; display: inline; border-radius: 5px; background-color: #FFA927;">A self taught passionate junior software engineer from Ethiopia.</span>
+                <br><br>
+                Joined the industry (Wrote my first hello world at): <span style="color: #1C1C1C; display: inline; border-radius: 5px; background-color: #FFA927;">August(8) 13, 2018 G.C</span>
+              </p>
+            </div>
+            <div style="display: inline-block; width: 40%; height: 60%; border: 2px solid white; margin: 10% 3%; padding: 2%; border-top: none;  min-width: 300px;">
+              <p style="line-height: 1.5rem;">
+                Why:
+                <span style="color: #1C1C1C; display: inline; border-radius: 5px; background-color: #FFA927;">
+                  I liked crafting things when I was a kid.
+                  And getting those accessories for the things I wanted to build was hard.
+                  Several years later, when I encountered my first experience with programming,
+                  I saw it as just like crafting things when I was a kid.
+                  Except all the things I need are right at the tip of my hand.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="works">
+        <div>
+          <h1>Works</h1>
+          <div class="works-container" >
+            <div class="work-container">
+              <a href="" class="work-link">
+                <h2>Monty</h2>
+                <p>
+                  Monty is a simple interpreted Stack-oriented scripting language with no capability of coditional decision making.
+                </p>
+              </a>
+              <div class="langs" style="padding: 2%; margin: 1%;">
+                <span class="lang-tag">C</span>
+              </div>
+              <div style="height: fit-content; width: 100%; display: flex; justify-content: flex-end;">
+                <a href="./project_monty.html"><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div>
+          <h1>Skills</h1>
+          <div>
+            <style>
+              #skills div ul li {
+                margin-top: 1%;
+                font-size: 19px;
+              }
+            </style>
+            <div style="display: inline-block; width: 40%; height: 60%; margin: 10% 3%; padding: 2%; border: 2px solid white; border-top: none">
+              <h2 style="text-align: center; margin-bottom: 3%;">Technical Skills</h2>
+              <ul style="list-style: none;">
+                <li><i class="devicon-python-plain"></i> Python {
+                  <ul style="list-style: none; padding-left: 5%;">
+                    <li><i class="devicon-django-plain"></i> Django</li>
+                  </ul>
+                }</li>
+                <li><i class="devicon-javascript-plain colored"></i> Javascript</li>
+                <li><i class="devicon-html5-plain colored"></i> HTML</li>
+                <li><i class="devicon-css3-plain colored"></i> CSS {
+                  <ul style="list-style: none; padding-left: 5%;">
+                    <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
+                  </ul>
+                }</li>
+                <li><i class="devicon-bash-plain"></i> Shell Scripting</li>
+                <li><i class="devicon-c-plain-wordmark colored"></i> C</li>
+                <li><i class="devicon-mysql-plain-wordmark colored"></i> Mysql</li>
+              </ul>
+            </div>
+            <div style="display: inline-block; width: 40%; height: 60%; border: 2px solid white; margin: 10% 3%; padding: 2%; border-top: none">
+              <h2 style="text-align: center; margin-bottom: 3%;">Soft Skills</h2>
+              <ul style="list-style: none;">
+                <li>Soft Skill 1</li>
+                <li>Soft Skill 2</li>
+                <li>Soft Skill 3</li>
+                <li>Soft Skill 4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <div>
+          <h1>Contact</h1>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
