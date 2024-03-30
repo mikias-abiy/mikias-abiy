@@ -25,5 +25,6 @@ Here are some mile stone projects i have done.
 * [**Responsive Web Designs**](https://github.com/mikias-abiy/responsive_web_designs#readme): Collection of responsive web design milestone projects from my freeCodeCamp Responsive Web Design curriculum.
 * [**Simple Shell**](https://github.com/mikias-abiy/simple_shell#readme): This is a simple UNIX shell built with C that performs some tasks that a standard UNIX shell can perform.
 * [**Seal**](https://github.com/mikias-abiy/seal#readme): A business website done for a Private client that works on content and video production.
+* [**Order Receiver**](https://github.com/mikias-abiy/order_receiver#readme): This a simple telegram bot that automates the hustle of regestering orders manualy by showing available items and letting user register their orders by giving them a serious of prompots.
 * [**Post forwarder**](https://github.com/mikias-abiy/post_forwarder#readme): A telegram bot that forwards a given post to a given list of groups / channels in a given time interaval reapeatdly with some other features.
 * [**Raffle Game**](https://github.com/mikias-abiy/raffle_game#readme): A tiktok fun raffle game that a live streamer could play with their audiences.
