@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Monty</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
@@ -20,30 +20,36 @@
         </div>
         <img class="profile-image" src="./assets/" alt="">
       </div>
-      <div class="about-me">
-        <a href="index.html#aboutMe">
-          <h3>About Me</h3>
-          <p>
-            I am a self-taught passionate junior software engineer from Ethiopia...
-          </p>
-      </a>
-      </div>
       <div class="toggle-off-container">
         <button class="toggle-off" id="toggleSidebarOff">
           <i class="bi bi-arrow-left"></i>
         </button>
       </div>
+      <div class="recent-project">
+        <a href="./project_order_receiver.html">
+          <h4>Recent Project</h4>
+          <h3>Order Receiver</h3>
+          <p>
+            This a simple telegram bot that automates the hustle of regestering orders
+            manualy by showing available items and letting user register their orders
+            by giving them a series of prompots 
+          </p>
+        </a>
+      </div>
       <nav>
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#works">Description</a></li>
-          <li><a href="index.html#skills">Gallary</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="./project_monty.html#description">Description</a></li>
+          <li><a href="./project_monty.html#installation">Installation</a></li>
+          <li><a href="./project_monty.html#usage">Usage</a></li>
         </ul>
       </nav>
+      <div class="download-resume">
+        <a href="assets/files/resume.pdf" download="resume.pdf" target="_blank">Download Resume</a>
+      </div>
       <div class="nav-social-links">
         <span>
-          <a href="https://github.com/mikias-abiy001" target="_blank">
+          <a href="https://github.com/mikias-abiy" target="_blank">
             <i class="devicon-github-plain"></i>
           </a>
         </span>
@@ -61,11 +67,11 @@
     </div>
     <div class="main">
       <section>
-        <div>
-          <h1>Description</h1>
+        <div id="main-left-pd">
+          <h1>Monty</h1>
           <div>
             <p>
-              <h2>What is Monty ?</h1>
+              <h2 id="description">1. What is Monty ?</h1>
               <br>
               <p>
                 Monty is a simple interpreted <a href="https://en.wikipedia.org/wiki/Stack-oriented_programming">Stack-oriented scripting language</a>
@@ -132,7 +138,7 @@ Hi Everybody
 <span class="hljs-number">121</span>
                 </code>
               </pre>
-              <h2 id="installation-guide">Installation Guide</h2>
+              <h2 id="installation">2. Installation</h2>
               <p>First clone the repo to your local machin by executing the folowing command in your terminal, assuming that you have git installed on your machine.</p>
               <pre class="code">
                 <code>
@@ -170,11 +176,11 @@ mv monty <span class="hljs-regexp">/path/</span>to<span class="hljs-regexp">/one
 ./monty <span class="hljs-built_in">file</span>
                 </code>
               </pre>
-              <h2>Monty&#39;s operators/commands and Usage.</h2>
+              <h2 id="usage">3. Monty&#39;s operators/commands and Usage.</h2>
               <blockquote>
                 <p>NOTE: monty can only interpret one command perline any thing you put after a valid command will not be taken to account</p>
               </blockquote>
-              <h3>Manipulating the stack.</h3>
+              <h3>3.1. Manipulating the stack.</h3>
               <p>
                 When monty startes interpreting a source file it startes with an empty stack so you have only two option to what you first line of your source file can be
                 the first pushing and element to the stack or changing the mode in which the stack operates on.<br>
@@ -215,78 +221,78 @@ $ monty file.m
               <table>
                 <thead>
                   <tr>
-                    <th style="text-align:left">Command</th>
-                    <th style="text-align:left">Description</th>
+                    <th >Command</th>
+                    <th >Description</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td style="text-align:left">push</td>
-                    <td style="text-align:left">Adds an integer into the stacks top/bottom base on the mode you are in.<br>syntax: <code>push &lt;integer&gt;</code>.</td>
+                    <td >push</td>
+                    <td >Adds an integer into the stacks top/bottom base on the mode you are in.<br>syntax: <code>push &lt;integer&gt;</code>.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">pall</td>
-                    <td style="text-align:left">Prints all the integers in the stack.</td>
+                    <td >pall</td>
+                    <td >Prints all the integers in the stack.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">pop</td>
-                    <td style="text-align:left">Delets the top element of the stack.</td>
+                    <td >pop</td>
+                    <td >Delets the top element of the stack.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">pint</td>
-                    <td style="text-align:left">Prints the top element of the stack.</td>
+                    <td >pint</td>
+                    <td >Prints the top element of the stack.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">swap</td>
-                    <td style="text-align:left">Swaps the index of top and the second top element.</td>
+                    <td >swap</td>
+                    <td >Swaps the index of top and the second top element.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">add</td>
-                    <td style="text-align:left">Adds the top two elements and stors the sum at the second element and deletes the top element.</td>
+                    <td >add</td>
+                    <td >Adds the top two elements and stors the sum at the second element and deletes the top element.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">nop</td>
-                    <td style="text-align:left">Does nothing.</td>
+                    <td >nop</td>
+                    <td >Does nothing.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">sub</td>
-                    <td style="text-align:left">Just like add but instead of adding it is for substracting the top element from the second element.</td>
+                    <td >sub</td>
+                    <td >Just like add but instead of adding it is for substracting the top element from the second element.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">mul</td>
-                    <td style="text-align:left">Just like add but instead of adding it is for multiplying the top two elements by each other.</td>
+                    <td >mul</td>
+                    <td >Just like add but instead of adding it is for multiplying the top two elements by each other.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">div</td>
-                    <td style="text-align:left">Just like add but instead of adding it is for dividing the second element by the top one.</td>
+                    <td >div</td>
+                    <td >Just like add but instead of adding it is for dividing the second element by the top one.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">mod</td>
-                    <td style="text-align:left">Just like add but instead of adding it is for find the mod of the second element divided by the top.</td>
+                    <td >mod</td>
+                    <td >Just like add but instead of adding it is for find the mod of the second element divided by the top.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">pchar</td>
-                    <td style="text-align:left">Prints the top element&#39;s corresponding assci value it it have one else error will be printed.</td>
+                    <td >pchar</td>
+                    <td >Prints the top element&#39;s corresponding assci value it it have one else error will be printed.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">pstr</td>
-                    <td style="text-align:left">Prints the stack element&#39;s correspoonding assci value and it won&#39;t stop until NUll terminator is found, stack ends or value is out of range</td>
+                    <td >pstr</td>
+                    <td >Prints the stack element&#39;s correspoonding assci value and it won&#39;t stop until NUll terminator is found, stack ends or value is out of range</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">rotl</td>
-                    <td style="text-align:left">Takes the top element of the stack an puts it at the end.</td>
+                    <td >rotl</td>
+                    <td >Takes the top element of the stack an puts it at the end.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">rotr</td>
-                    <td style="text-align:left">Takes the last element and puts it at the top.</td>
+                    <td >rotr</td>
+                    <td >Takes the last element and puts it at the top.</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">stack</td>
-                    <td style="text-align:left">The stack follow LIFO properties. (both addition and deletion takes place on one end)</td>
+                    <td >stack</td>
+                    <td >The stack follow LIFO properties. (both addition and deletion takes place on one end)</td>
                   </tr>
                   <tr>
-                    <td style="text-align:left">queue</td>
-                    <td style="text-align:left">The stack follows FIFO properties. (addition takes place at the rear of the stack and deletion takes place at the front of the stack.)</td>
+                    <td >queue</td>
+                    <td >The stack follows FIFO properties. (addition takes place at the rear of the stack and deletion takes place at the front of the stack.)</td>
                   </tr>
                 </tbody>
               </table>
