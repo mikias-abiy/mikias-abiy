@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Receiver</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <button class="toggle-on" id="toggleSidebarOn">
+      <i class="bi bi-arrow-right"></i>
+    </button>
+    <div class="sidebar">
+      <div class="profile">
+        <div class="sidebar-name">
+          <span class="first-name"></span><br>
+          <span class="last-name"></span>
+        </div>
+        <img class="profile-image" src="./assets/" alt="">
+      </div>
+      <div class="toggle-off-container">
+        <button class="toggle-off" id="toggleSidebarOff">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+      </div>
+      <div class="recent-project">
+        <a href="./project_order_receiver.html">
+          <h4>Recent Project</h4>
+          <h3>Order Receiver</h3>
+          <p>
+            This a simple telegram bot that automates the hustle of regestering orders
+            manualy by showing available items and letting user register their orders
+            by giving them a series of prompots 
+          </p>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./project_order_receiver.html#description">Description</a></li>
+          <li><a href="./project_order_receiver.html#installation">Installation</a></li>
+          <li><a href="./project_order_receiver.html#how-it-works">How it Works</a></li>
+          <li><a href="./project_order_receiver.html#commands">Usage</a></li>
+        </ul>
+      </nav>
+      <div class="download-resume">
+        <a href="assets/files/resume.pdf" download="resume.pdf" target="_blank">Download Resume</a>
+      </div>
+      <div class="nav-social-links">
+        <span>
+          <a href="https://github.com/mikias-abiy" target="_blank">
+            <i class="devicon-github-plain"></i>
+          </a>
+        </span>
+        <span>
+          <a href="" target="_blank">
+            <i class="devicon-linkedin-plain"></i>
+          </a>
+        </span>
+        <span>
+          <a href="" target="_blank">
+            <i class="devicon-twitter-plain"></i>
+          </a>          
+        </span>
+      </div>
+    </div>
+    <div class="main">
+      <section>
+        <div id="main-left-pd">
+          <h1>Order Receiver 0.0.1</h1>
+          <div>
+            <p>
+              <h2 id="description">1. What is Order Receiver ?</h1>
+              <br>
+              <p>
+                This a simple telegram bot that automates the hustle of regestering orders manualy by showing available items and letting user register
+                their orders by giving them a series of prompots. Even though the prompots are specific to the items that I was selling at the time I
+                built this project you can tweak it a little to make it meat your needs. Don't hesatet to do so because it's well documented and organized.
+                Checkout the dive deep into the inner working of the bot.
+              </p>
+              <h2 id="installation">2. Installtion</h2>
+              First Clone the repo using this command.
+              <pre class="code">
+git clone https://github.com/mikias-abiy/order_receiver.git
+              </pre>
+              <p>
+                Then, Navigate to the directory you cloned.
+              </p>
+              <pre class="code">
+cd order_receiver
+              </pre>
+              <p>
+                Then create a python virtual enviroment. It's recommended to use virtual enviroment to not mess with the
+                version of other projects dependencies (but keep in mind this optional)
+              </p>
+              <pre class="code">
+python3 -m venv .venv
+              </pre>
+              <p>
+                Then activate the virtual enviroment by executing this command (assuming you are using linux)
+                you can look the documentation for venv here.
+              </p>
+              <pre class="code">
+. .venv/bin/activate
+              </pre>
+              <p>
+                Then, install all the necessary third party libraries by executing the following command.
+              </p>
+              <pre class="code">
+pip install -r requirements.txt
+              </pre>
+              <p>
+                Then, set the your bot's token in the config.py file ot the BOT_API_TOKEN variable.
+                If you don't have or don't know how to generate Telegram bot API token take a look at there documentation here<br><br>
+                Then, run the bot by executing the following command
+              </p>
+              <pre class="code">
+python3 main.py
+              </pre>
+              <h2 id="how-it-works">3. How It Works</h2>
+              <p>
+                Coming soon
+              </p>
+              <h2 id="commands">4. List of Commands</h2>
+              <h3>4.1. User Commands</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th >Command</th>
+                    <th >Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >Items</td>
+                    <td >Sends items with there pictures and prices.</td>
+                  </tr>
+                  <tr>
+                    <td >Order</td>
+                    <td >Starts the chain of methods that prompot the user to enter the information about their order.</td>
+                  </tr>
+                  <tr>
+                    <td >My Order</td>
+                    <td >Sends the details of order the user ordered if they have one previously.</td>
+                  </tr>
+                  <tr>
+                    <td >About</td>
+                    <td >Sends information about the bot and the developer of the bot.</td>
+                  </tr>
+                  <tr>
+                    <td >Language</td>
+                    <td > Lets the user choose language currenty the only available languages are Amharich and English.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3>4.2. Admin Commands</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th >Command</th>
+                    <th >Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >/all</td>
+                    <td >Sends all the registered orderes to the admin.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

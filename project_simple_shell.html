@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Shell</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <button class="toggle-on" id="toggleSidebarOn">
+      <i class="bi bi-arrow-right"></i>
+    </button>
+    <div class="sidebar">
+      <div class="profile">
+        <div class="sidebar-name">
+          <span class="first-name"></span><br>
+          <span class="last-name"></span>
+        </div>
+        <img class="profile-image" src="./assets/" alt="">
+      </div>
+      <div class="toggle-off-container">
+        <button class="toggle-off" id="toggleSidebarOff">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+      </div>
+      <div class="recent-project">
+        <a href="./project_order_receiver.html">
+          <h4>Recent Project</h4>
+          <h3>Order Receiver</h3>
+          <p>
+            This a simple telegram bot that automates the hustle of regestering orders
+            manualy by showing available items and letting user register their orders
+            by giving them a series of prompots 
+          </p>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./project_order_receiver.html#description">Description</a></li>
+          <li><a href="./project_order_receiver.html#installation">Installation</a></li>
+          <li><a href="./project_order_receiver.html#how-it-works">How it Works</a></li>
+          <li><a href="./project_order_receiver.html#commands">Usage</a></li>
+        </ul>
+      </nav>
+      <div class="download-resume">
+        <a href="assets/files/resume.pdf" download="resume.pdf" target="_blank">Download Resume</a>
+      </div>
+      <div class="nav-social-links">
+        <span>
+          <a href="https://github.com/mikias-abiy" target="_blank">
+            <i class="devicon-github-plain"></i>
+          </a>
+        </span>
+        <span>
+          <a href="" target="_blank">
+            <i class="devicon-linkedin-plain"></i>
+          </a>
+        </span>
+        <span>
+          <a href="" target="_blank">
+            <i class="devicon-twitter-plain"></i>
+          </a>          
+        </span>
+      </div>
+    </div>
+    <div class="main">
+      <section>
+        <div id="main-left-pd">
+          <h1>Simple Shell</h1>
+          <div>
+            <p>
+              <h2 id="description">1. What is Shell ?</h1>
+              <br>
+              <p>
+                The shell is a <a href="https://en.wikipedia.org/wiki/Command-line_interface">Command Line Interface(CLI)</a> that can be used to interact with the kernel of an Operating System OS specifically for linux.
+                It can basically do any task that a GUI file explorer or file manager can do like navigating through folder deleting and creating files.
+                But with more flexable features like scripting. with scripting you can automate tasks that are done frequently through out the day
+                without the interfirence of humans and many many more you can read more about shells here.
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Unix_shell" target="_blank">Unix shell wikipedia</a></li>
+                    <li><a href="https://www.tutorialspoint.com/unix/unix-shell.htm" target="_blank">What is shell tutorialspoint</a></li>
+
+                </ul>
+              </p>
+              <h2 id="installation">2. Installtion</h2>
+              <p>
+                To preceed with the installation process you will need the following tools.
+
+                <ul>
+                    <li>A machine that is running Linux distro.</li>
+                    <li><a href="https://gcc.gnu.org/">Gcc compiler</a></li>
+                </ul>
+              </p>
+              First Clone the repo using this command.
+              <pre class="code">
+git clone https://github.com/mikias-abiy/simple_shell.git
+              </pre>
+              <p>
+                Then, Navigate to the directory you cloned.
+              </p>
+              <pre class="code">
+cd simple_shell
+              </pre>
+              <p>
+                Then, Compile the source code with gcc with the following command.
+              </p>
+              <pre class="code">
+gcc -std=gnu89 *.c -o hsh
+              </pre>
+              <p>
+                Then, run the executable with the follwing command.
+              </p>
+              <pre class="code">
+./hsh
+              </pre>
+              <p>
+                Then, You should see something like this.
+              </p>
+              <pre class="code">
+#cisfun$ 
+              </pre>
+              <p>
+                Here is an example input output.
+              </p>
+              <pre class="code">
+SHELL> gcc -std=gnu89 *.c -o hsh
+SHELL> ls
+a.out  AUTHORS  DEV  hsh  lenv.c  lenv.h  lmemory.h  lstring.h  main.h  memory.c  README.md  shell.c  string_2.c  string.c  text
+SHELL> ./hsh 
+#cisfun$ ls
+a.out  AUTHORS  DEV  hsh  lenv.c  lenv.h  lmemory.h  lstring.h  main.h  memory.c  README.md  shell.c  string_2.c  string.c  text
+                
+#cisfun$ ls
+a.out  AUTHORS  DEV  hsh  lenv.c  lenv.h  lmemory.h  lstring.h  main.h  memory.c  README.md  shell.c  string_2.c  string.c  text
+                
+#cisfun$ ls
+a.out  AUTHORS  DEV  hsh  lenv.c  lenv.h  lmemory.h  lstring.h  main.h  memory.c  README.md  shell.c  string_2.c  string.c  text
+                
+#cisfun$ test 
+                
+#cisfun$ test
+                
+#cisfun$ file
+Usage: file [-bcCdEhikLlNnprsSvzZ0] [--apple] [--extension] [--mime-encoding]
+            [--mime-type] [-e <testname>] [-F <separator>]  [-f <namefile>]
+            [-m <magicfiles>] [-P <parameter=value>] [--exclude-quiet]
+            <file> ...
+       file -C [-m <magicfiles>]
+       file [--help]
+                
+#cisfun$ jl   
+./hsh : No such file or directory
+#cisfun$ 
+              </pre>
+              <h2 id="how-it-works">3. Feature supported for the moument</h2>
+              <p>
+                <ul>
+                    <li>Command execution</li>
+                    <li>Getting information about the envirnoment</li>
+                    <li>Others comming soon.</li>
+                </ul>
+              </p>
+              <h2 id="commands">4. Authors</h2>
+              <p>
+                <ul>
+                    <li>Nebiyu Samuel [<a href="mailto:nebiyuhiyabu@gmail.com" target="_blank">nebiyuhiyabu@gmail.com</a>]</li>
+                    <li>Mikias Abiy [<a href="mailto:mikias_abiy@proton.me" target="_blank">mikias_abiy@proton.me</a>]</li>
+                </ul>
+              </p>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
