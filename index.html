@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mikias Abiy's Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
@@ -20,13 +20,16 @@
         </div>
         <img class="profile-image" src="./assets/" alt="">
       </div>
-      <div class="about-me">
-        <a href="index.html#aboutMe">
-          <h3>About Me</h3>
+      <div class="recent-project">
+        <a href="./project_order_receiver.html">
+          <h4>Recent Project</h4>
+          <h3>Order Receiver</h3>
           <p>
-            I am a self-taught passionate junior software engineer from Ethiopia...
+            This a simple telegram bot that automates the hustle of regestering orders
+            manualy by showing available items and letting user register their orders
+            by giving them a series of prompots 
           </p>
-      </a>
+        </a>
       </div>
       <div class="toggle-off-container">
         <button class="toggle-off" id="toggleSidebarOff">
@@ -41,20 +44,23 @@
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="download-resume">
+        <a href="assets/files/resume.pdf" download="resume.pdf" target="_blank">Download Resume</a>
+      </div>
       <div class="nav-social-links">
         <span>
-          <a href="https://github.com/mikias-abiy001" target="_blank">
-            <i class="devicon-github-plain"></i>
+          <a href="https://github.com/mikias-abiy" target="_blank">
+            <i class="bi bi-github"></i>
           </a>
         </span>
         <span>
           <a href="" target="_blank">
-            <i class="devicon-linkedin-plain"></i>
+            <i class="bi bi-linkedin"></i>
           </a>
         </span>
         <span>
           <a href="" target="_blank">
-            <i class="devicon-twitter-plain"></i>
+            <i class="bi bi-twitter"></i>
           </a>          
         </span>
       </div>
@@ -63,18 +69,18 @@
       <section id="aboutMe">
         <div>
           <h1>About me</h1>
-          <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
-            <div style="display: inline-block; width: 40%; height: 60%; margin: 10% 3%; padding: 2%; border: 2px solid white; border-top: none; min-width: 300px;">
-              <p style="line-height: 1.5rem;">
-                Mikias Abiy: <span style="color: #1C1C1C; display: inline; border-radius: 5px; background-color: #FFA927;">A self taught passionate junior software engineer from Ethiopia.</span>
+          <div class="flex-center-center">
+            <div class="half-flex">
+              <p>
+                Mikias Abiy: <span class="highlight">A self taught passionate junior software engineer from Ethiopia.</span>
                 <br><br>
-                Joined the industry (Wrote my first hello world at): <span style="color: #1C1C1C; display: inline; border-radius: 5px; background-color: #FFA927;">August(8) 13, 2018 G.C</span>
+                Joined the industry (Wrote my first hello world at): <span class="highlight">August(8) 13, 2018 G.C</span>
               </p>
             </div>
-            <div style="display: inline-block; width: 40%; height: 60%; border: 2px solid white; margin: 10% 3%; padding: 2%; border-top: none;  min-width: 300px;">
-              <p style="line-height: 1.5rem;">
+            <div class="half-flex">
+              <p>
                 Why:
-                <span style="color: #1C1C1C; display: inline; border-radius: 5px; background-color: #FFA927;">
+                <span class="highlight">
                   I liked crafting things when I was a kid.
                   And getting those accessories for the things I wanted to build was hard.
                   Several years later, when I encountered my first experience with programming,
@@ -91,17 +97,46 @@
           <h1>Works</h1>
           <div class="works-container" >
             <div class="work-container">
-              <a href="" class="work-link">
+              <a href="./project_monty.html" class="work-link">
                 <h2>Monty</h2>
                 <p>
                   Monty is a simple interpreted Stack-oriented scripting language with no capability of coditional decision making.
                 </p>
               </a>
-              <div class="langs" style="padding: 2%; margin: 1%;">
+              <div class="langs">
                 <span class="lang-tag">C</span>
               </div>
-              <div style="height: fit-content; width: 100%; display: flex; justify-content: flex-end;">
-                <a href="./project_monty.html"><i class="bi bi-arrow-right"></i></a>
+              <div class="project-link">
+                <a href="https://github.com/mikias-abiy/monty"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="work-container">
+              <a href="./project_order_receiver.html" class="work-link">
+                <h2>Order Receiver</h2>
+                <p>
+                  This a simple telegram bot that automates the hustle of regestering orders manualy by showing available items and letting
+                  user register their orders by giving them a series of prompots.
+                </p>
+              </a>
+              <div class="langs">
+                <span class="lang-tag">python(telebot)</span>
+              </div>
+              <div class="project-link">
+                <a href="https://github.com/mikias-abiy/order_receiver"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="work-container">
+              <a href="./project_simple_shell.html" class="work-link">
+                <h2>Simple Shell</h2>
+                <p>
+                  This is a simple UNIX shell that performs some tasks that a standard UNIX shell can perform.
+                </p>
+              </a>
+              <div class="langs">
+                <span class="lang-tag">C</span>
+              </div>
+              <div class="project-link">
+                <a href="https://github.com/mikias-abiy/simple_shell"><i class="bi bi-github"></i></a>
               </div>
             </div>
           </div>
@@ -110,25 +145,19 @@
       <section id="skills">
         <div>
           <h1>Skills</h1>
-          <div>
-            <style>
-              #skills div ul li {
-                margin-top: 1%;
-                font-size: 19px;
-              }
-            </style>
-            <div style="display: inline-block; width: 40%; height: 60%; margin: 10% 3%; padding: 2%; border: 2px solid white; border-top: none">
-              <h2 style="text-align: center; margin-bottom: 3%;">Technical Skills</h2>
-              <ul style="list-style: none;">
+          <div class="flex-center-center">
+            <div class="half-flex">
+              <h2 class="skills-list-heading">Technical Skills</h2>
+              <ul>
                 <li><i class="devicon-python-plain"></i> Python {
-                  <ul style="list-style: none; padding-left: 5%;">
+                  <ul class='sub-list'>
                     <li><i class="devicon-django-plain"></i> Django</li>
                   </ul>
                 }</li>
                 <li><i class="devicon-javascript-plain colored"></i> Javascript</li>
                 <li><i class="devicon-html5-plain colored"></i> HTML</li>
                 <li><i class="devicon-css3-plain colored"></i> CSS {
-                  <ul style="list-style: none; padding-left: 5%;">
+                  <ul class="sub-list">
                     <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
                   </ul>
                 }</li>
@@ -137,13 +166,13 @@
                 <li><i class="devicon-mysql-plain-wordmark colored"></i> Mysql</li>
               </ul>
             </div>
-            <div style="display: inline-block; width: 40%; height: 60%; border: 2px solid white; margin: 10% 3%; padding: 2%; border-top: none">
-              <h2 style="text-align: center; margin-bottom: 3%;">Soft Skills</h2>
-              <ul style="list-style: none;">
-                <li>Soft Skill 1</li>
-                <li>Soft Skill 2</li>
-                <li>Soft Skill 3</li>
-                <li>Soft Skill 4</li>
+            <div class="half-flex">
+              <h2 class="skills-list-heading">Soft Skills</h2>
+              <ul>
+                <li>Follows industry standard guidlines</li>
+                <li>Good Problem solving skills</li>
+                <li>Professional</li>
+                <li>Socaible</li>
               </ul>
             </div>
           </div>
@@ -153,6 +182,19 @@
       <section id="contact">
         <div>
           <h1>Contact</h1>
+          <div class="flex-center-center">
+            <div class="half-flex">
+              <p><i class="bi bi-envelope"></i> <a href="mailto:mikias_abiy@proton.me" target="_blank">mikias_abiy@proton.me</a></p>
+              <br>
+              <p><i class="bi bi-globe"></i> <a href="https://mikias-abiy.github.io/mikias-abiy" target="_blank">https://mikias-abiy.github.io/mikias-abiy</a></p>
+              <br>
+              <p><i class="bi bi-github"></i> <a href="https://github.com/mikias-abiy/" target="_blank">https://github.com/mikias-abiy/</a></p>
+              <br>
+              <p><i class="bi bi-linkedin"></i> <a href="#" target="_blank">https://www.linkedin.com/</a></p>
+              <br>
+            </div>
+          </div>
+          
         </div>
       </section>
     </div>
