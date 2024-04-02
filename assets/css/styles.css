@@ -27,6 +27,7 @@ html {
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 10px auto;
+  margin-bottom: 20px;
   text-decoration: underline;
 }
 
@@ -64,6 +65,12 @@ li {
 .sub-list {
   padding-left: 5%;
 }
+
+img {
+  width: 80%;
+  height: auto;
+  
+}
 pre.code {
   width: 96%;
   background-color: #101010;
@@ -71,6 +78,11 @@ pre.code {
   margin: 10px auto;
   padding-left: 10px;
   overflow-x: scroll;
+}
+code.code {
+  background-color: #101010;
+  color: white;
+  padding: 2px;
 }
 
 .flex-center-center {
@@ -254,6 +266,12 @@ nav {
   border-radius: 50%;
   vertical-align: top;
   background-color: #FFA927;
+}
+
+.work-image {
+  width: 70vw;
+  height: auto;
+  padding: 3vw;
 }
 
 /**
