@@ -18,7 +18,7 @@ I am a passionate highly motivated software engineer from Ethiopia. I am passion
 
 ### Projects
 Here are some mile stone projects i have done.
-* [**vimrcm**](https://github.com/mikias-abiy/vimrcm): is a vimrc configuration manager that lets you manage your different vimrc configurations for different languages, code bases and so on. 
+* [**vimrcm**](https://github.com/mikias-abiy/vimrcm#readme): is a vimrc configuration manager that lets you manage your different vimrc configurations for different languages, code bases and so on. 
 * [**Monty**](https://github.com/mikias-abiy/monty#readme): A simple interpreted stack oriented scripting language built with C.
 * [**Responsive Web Designs**](https://github.com/mikias-abiy/responsive_web_designs#readme): Collection of responsive web design milestone projects from my freeCodeCamp Responsive Web Design curriculum.
 * [**Simple Shell**](https://github.com/mikias-abiy/simple_shell#readme): This is a simple UNIX shell built with C that performs some tasks that a standard UNIX shell can perform.
