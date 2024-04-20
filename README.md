@@ -7,7 +7,9 @@ I am a passionate highly motivated software engineer from Ethiopia. I am passion
 <br>
 <br>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mikias-abiy&theme=tokyonight)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=mikias-abiy&show_icons=true&theme=dark)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mikias-abiy&theme=dark)
 
 <br>
 <br>
