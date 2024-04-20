@@ -12,7 +12,7 @@ I am a passionate highly motivated software engineer from Ethiopia. I am passion
 <br>
 <br>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mikias-abiy&hide_progress=true$layout=compact&theme=dark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mikias-abiy&hide_progress=true&layout=compact&theme=dark)
 
 <br>
 
