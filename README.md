@@ -7,19 +7,19 @@ I am a passionate highly motivated software engineer from Ethiopia. I am passion
 <br>
 <br>
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=mikias-abiy&show_icons=true&theme=dark)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mikias-abiy&theme=dark)
+![Mikias's GitHub stats](https://github-readme-stats.vercel.app/api?username=mikias-abiy&show_icons=true&theme=dark)
 
 <br>
 <br>
 
-[![Mikias's GitHub stats](https://github-readme-stats.vercel.app/api?username=mikias-abiy)](https://github.com/anuraghazra/github-readme-stats)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mikias-abiy&hide_progress=true$layout=compact&theme=dark)
 
 <br>
 
-### Projects
+## Projects
+<br>
 Here are some mile stone projects i have done.
+<br>
 * [**vimrcm**](https://github.com/mikias-abiy/vimrcm#readme): is a vimrc configuration manager that lets you manage your different vimrc configurations for different languages, code bases and so on. 
 * [**Monty**](https://github.com/mikias-abiy/monty#readme): A simple interpreted stack oriented scripting language built with C.
 * [**Responsive Web Designs**](https://github.com/mikias-abiy/responsive_web_designs#readme): Collection of responsive web design milestone projects from my freeCodeCamp Responsive Web Design curriculum.
