@@ -1,6 +1,6 @@
 # Hi I am Mikias Abiy
 
-I am a passionate highly motivated software engineer from Ethiopia. I am passionate about security and network engineering. Currently following a full stack developer learning path on [freeCodeCamp](https://www.freecodecamp.org/).
+Software engineer from Ethiopia.
 
 ### Find me on the web
 [linkedin](https://www.linkedin.com/in/mikias-abiy-675946301/)
